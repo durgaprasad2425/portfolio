@@ -20,31 +20,7 @@ Tailwind CSS	Styling
 Framer Motion	Animations
 Lucide React	Icons
 Shadcn/UI	UI Components
-📁 Project Structure
-portfolio/
-├── components/
-│   ├── portfolio/
-│   │   ├── Navbar.jsx
-│   │   ├── HeroSection.jsx
-│   │   ├── AboutSection.jsx
-│   │   ├── SkillsSection.jsx
-│   │   ├── ProjectsSection.jsx
-│   │   ├── ExperienceSection.jsx
-│   │   ├── TestimonialsSection.jsx
-│   │   ├── ContactSection.jsx
-│   │   └── Footer.jsx
-│   └── ui/
-│       ├── button.jsx
-│       ├── card.jsx
-│       ├── badge.jsx
-│       ├── input.jsx
-│       ├── textarea.jsx
-│       └── label.jsx
-├── pages/
-│   └── Home.jsx
-├── package.json
-├── tailwind.config.js
-└── README.md
+
 🚀 Quick Start
 # Clone the repository
 git clone https://github.com/durgaprasad2425/portfolio.git
@@ -57,24 +33,7 @@ npm install
 
 # Start development server
 npm run dev
-🎨 Color Palette
-Color	Hex	Usage
-Slate 950	#020617	Primary Background
-Slate 900	#0f172a	Secondary Background
-Amber 400	#FBBF24	Primary Accent
-Orange 500	#F97316	Secondary Accent
-Slate 300	#CBD5E1	Body Text
-📦 Dependencies
-{
-  "react": "^18.2.0",
-  "react-dom": "^18.2.0",
-  "framer-motion": "^10.16.0",
-  "lucide-react": "^0.294.0",
-  "tailwindcss": "^3.3.0",
-  "class-variance-authority": "^0.7.0",
-  "clsx": "^2.0.0",
-  "tailwind-merge": "^2.0.0"
-}
+
 🌐 Deployment
 Vercel (Recommended)
 npm i -g vercel
