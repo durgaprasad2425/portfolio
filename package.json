@@ -1,0 +1,29 @@
+{
+  "name": "durgaprasad-portfolio",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@radix-ui/react-label": "^2.1.8",
+    "@radix-ui/react-slot": "^1.2.4",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "framer-motion": "^10.16.0",
+    "lucide-react": "^0.294.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwind": "^4.0.0",
+    "tailwind-merge": "^2.0.0",
+    "tailwindcss": "^3.4.19",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.0",
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "vite": "^5.0.0"
+  }
+}
