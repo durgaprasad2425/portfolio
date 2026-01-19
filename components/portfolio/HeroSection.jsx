@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown, Github, Linkedin, Mail, Sparkles, Bot, Brain, Cpu } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail, Sparkles, Bot, Brain, Cpu, FileText, Download } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
 export default function HeroSection({ onNavigate }) {
@@ -44,6 +44,30 @@ export default function HeroSection({ onNavigate }) {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        {/* Profile Picture */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className="mb-8"
+        >
+          <div className="relative inline-block">
+            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-amber-400/50 shadow-xl shadow-amber-500/20">
+              <img 
+                src="/profile-picture.png"
+                alt="Durgaprasad"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <motion.div
+              className="absolute -bottom-2 -right-2 w-10 h-10 bg-green-500 rounded-full border-4 border-slate-950 flex items-center justify-center"
+              animate={{ scale: [1, 1.1, 1] }}
+              transition={{ duration: 2, repeat: Infinity }}
+            >
+              <span className="text-white text-xs font-bold">AI</span>
+            </motion.div>
+          </div>
+        </motion.div>
         {/* Status Badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -108,7 +132,7 @@ export default function HeroSection({ onNavigate }) {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
         >
           <Button
             size="lg"
@@ -127,6 +151,42 @@ export default function HeroSection({ onNavigate }) {
             <Mail className="w-5 h-5 mr-2" />
             Get in Touch
           </Button>
+        </motion.div>
+
+        {/* CV Buttons */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.9 }}
+          className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-12"
+        >
+          <a
+            href="/DurgaPrasad_AI Engineer.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              size="default"
+              variant="ghost"
+              className="text-slate-300 hover:text-white hover:bg-slate-800/50"
+            >
+              <FileText className="w-4 h-4 mr-2" />
+              View CV
+            </Button>
+          </a>
+          <a
+            href="/DurgaPrasad_AI Engineer.pdf"
+            download
+          >
+            <Button
+              size="default"
+              variant="ghost"
+              className="text-slate-300 hover:text-white hover:bg-slate-800/50"
+            >
+              <Download className="w-4 h-4 mr-2" />
+              Download CV
+            </Button>
+          </a>
         </motion.div>
 
         {/* Social Links */}
