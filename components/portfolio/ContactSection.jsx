@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
+import emailjs from "@emailjs/browser";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -63,21 +64,33 @@ export default function ContactSection() {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    setIsSubmitting(false);
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  try {
+    await emailjs.send(
+      "service_igle4w4",
+      "template_e0lgd4f",
+      {
+        user_name: formData.name,   // 👈 match template
+        user_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      },
+      "jbjTcC9691PlRv1tw"
+    );
+
     setIsSubmitted(true);
-    
-    // Reset after showing success
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({ name: '', email: '', subject: '', message: '' });
-    }, 3000);
-  };
+    setFormData({ name: "", email: "", subject: "", message: "" });
+
+  } catch (error) {
+    alert("Failed to send message. Try again.");
+    console.error(error);
+  }
+
+  setIsSubmitting(false);
+};
+
 
   return (
     <section id="contact" className="py-20 md:py-32 bg-slate-950">
