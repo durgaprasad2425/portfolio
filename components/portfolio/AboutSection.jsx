@@ -65,7 +65,7 @@ export default function AboutSection() {
               <div className="space-y-4 text-slate-300 leading-relaxed">
                 <p>
                   I'm <span className="text-white font-semibold">Gollu Durgaprasad</span>, an AI Engineer passionate about 
-                  building systems that think, learn, and adapt. With <span className="text-amber-400 font-medium">2 years 
+                  building systems that think, learn, and adapt. With <span className="text-amber-400 font-medium">2+ years 
                   of hands-on experience</span>, I specialize in creating intelligent solutions that bridge the gap 
                   between human needs and machine capabilities.
                 </p>

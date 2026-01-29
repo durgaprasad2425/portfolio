@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Bot, Mail, Users, Image, MessageSquare, FileText,
-  ExternalLink, Github, ArrowRight, Sparkles, Layers
+  ExternalLink, Github, ArrowRight, Sparkles, Layers, ShoppingCart
 } from 'lucide-react';
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -12,6 +12,25 @@ export default function ProjectsSection() {
   const [filter, setFilter] = useState('all');
 
   const projects = [
+    {
+      id: 0,
+      title: 'Shopify MCP Bot',
+      category: 'automation',
+      icon: ShoppingCart,
+      gradient: 'from-green-500 to-teal-500',
+      description: 'Built an intelligent agent leveraging the MCP protocol to fetch and summarize Shopify store details (orders, products, analytics) based on user queries.',
+      impact: [
+        'Integrated LLMs for natural language understanding',
+        'FastAPI for real-time API responses',
+        'Fetches and summarizes Shopify analytics'
+      ],
+      tech: ['Python', 'FastAPI', 'LangChain', 'MongoDB', 'MCP', 'Docker'],
+      metrics: {
+        label: 'Data Points',
+        value: '3+',
+      },
+      featured: true,
+    },
     {
       id: 1,
       title: 'Multi-Modal AI Chatbot',

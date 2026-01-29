@@ -8,12 +8,26 @@ export default function ExperienceSection() {
   const experiences = [
     {
       type: 'work',
-      title: 'AI Developer',
+      title: 'AI Engineer',
+      company: 'Eminence Technology',
+      location: 'Punjab, India',
+      period: 'Nov 2025 – Present',
+      current: true,
+      description: 'Building intelligent agents and AI-powered solutions for e-commerce platforms.',
+      achievements: [
+        'Shopify MCP: Built an intelligent agent leveraging the MCP protocol to fetch and summarize Shopify store details (orders, products, analytics) based on user queries',
+        'Integrated LLMs for natural language understanding and FastAPI for real-time API responses'
+      ],
+      technologies: ['Python', 'FastAPI', 'LangChain', 'MongoDB', 'MCP', 'Docker']
+    },
+    {
+      type: 'work',
+      title: 'AI Engineer',
       company: 'Hallmark Global Technologies Ltd',
-      location: 'India, Visakhapatnam',
+      location: 'Visakhapatnam, India',
       period: 'September 2023 - September 2025',
       current: false,
-      description: 'Building intelligent AI systems and autonomous agents for enterprise solutions.',
+      description: 'Built intelligent AI systems and autonomous agents for enterprise solutions.',
       achievements: [
         'Developed multi-modal AI chatbot handling PDFs, Word docs, images, and web content',
         'Created AI-led interview bot with adaptive multi-stage questioning',
