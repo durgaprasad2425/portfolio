@@ -122,7 +122,7 @@ export default function HeroSection({ onNavigate }) {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="text-slate-400 text-lg max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          2+ years of experience building production-ready AI solutions. 
+          3 years of experience building production-ready AI solutions. 
           Specializing in LangChain, RAG systems, and conversational AI 
           that transforms how businesses operate.
         </motion.p>
@@ -161,7 +161,7 @@ export default function HeroSection({ onNavigate }) {
           className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-12"
         >
           <a
-            href="/DurgaPrasad_AI Engineer.pdf"
+            href="/uploads/DurgaPrasad_AI_Engineer.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -175,7 +175,7 @@ export default function HeroSection({ onNavigate }) {
             </Button>
           </a>
           <a
-            href="/DurgaPrasad_AI Engineer.pdf"
+            href="/uploads/DurgaPrasad_AI_Engineer.pdf"
             download
           >
             <Button

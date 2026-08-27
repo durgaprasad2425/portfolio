@@ -5,8 +5,8 @@ import { Card } from "@/components/ui/card";
 
 export default function AboutSection() {
   const stats = [
-    { label: 'Years Experience', value: '2+', icon: Calendar },
-    { label: 'Projects Delivered', value: '6+', icon: Briefcase },
+    { label: 'Years Experience', value: '3', icon: Calendar },
+    { label: 'Projects Delivered', value: '10+', icon: Briefcase },
     { label: 'Certifications', value: '3', icon: Award },
   ];
 
@@ -65,7 +65,7 @@ export default function AboutSection() {
               <div className="space-y-4 text-slate-300 leading-relaxed">
                 <p>
                   I'm <span className="text-white font-semibold">Gollu Durgaprasad</span>, an AI Engineer passionate about 
-                  building systems that think, learn, and adapt. With <span className="text-amber-400 font-medium">2+ years 
+                  building systems that think, learn, and adapt. With <span className="text-amber-400 font-medium">3 years 
                   of hands-on experience</span>, I specialize in creating intelligent solutions that bridge the gap 
                   between human needs and machine capabilities.
                 </p>
@@ -75,7 +75,7 @@ export default function AboutSection() {
                   and intelligent matching engines that serve real businesses today.
                 </p>
                 <p>
-                  Currently, I’m working as an AI Engineer at <span className="text-white font-semibold">Eminence Technology</span>, where I focus on developing context-aware AI applications and crafting autonomous agents that don’t just respond, but truly understand user intent.
+                  Currently, I’m working as an AI Full Stack Developer at <span className="text-white font-semibold">Seekho Becho</span>, where I focus on developing context-aware AI applications and crafting autonomous agents that don’t just respond, but truly understand user intent.
                 </p>
               </div>
             </Card>

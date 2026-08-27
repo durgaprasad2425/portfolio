@@ -13,6 +13,82 @@ export default function ProjectsSection() {
 
   const projects = [
     {
+      id: 100,
+      title: 'Omnichannel AI Chatbot Platform',
+      category: 'chatbot',
+      icon: Bot,
+      gradient: 'from-blue-600 to-indigo-600',
+      description: 'End-to-end chatbot platform with multi-format Knowledge Base ingestion, RAG, and multi-channel deployment with a drag-and-drop flow builder.',
+      impact: [
+        'Zero-coding deployment across 5+ channels',
+        'RAG via LangChain & MongoDB Vector Search',
+        'Multi-format KB ingestion (PDFs, images, sites)'
+      ],
+      tech: ['React Flow', 'LangChain', 'MongoDB', 'OpenAI', 'Gemini'],
+      metrics: {
+        label: 'Channels',
+        value: '5+',
+      },
+      featured: true,
+    },
+    {
+      id: 101,
+      title: 'WhatsApp Automation Engine',
+      category: 'automation',
+      icon: MessageSquare,
+      gradient: 'from-green-500 to-emerald-600',
+      description: 'Unified WhatsApp platform supporting both official and unofficial API connections for bulk campaigns and intelligent automated responses.',
+      impact: [
+        'Multi-session management via Baileys & Meta API',
+        'Bulk campaign engine with dynamic variables',
+        'AI Agent routing & keyword auto-replies'
+      ],
+      tech: ['Node.js', 'Baileys', 'Meta API', 'React'],
+      metrics: {
+        label: 'Scale',
+        value: 'Bulk',
+      },
+      featured: true,
+    },
+    {
+      id: 102,
+      title: 'SeekhoAI Marketing Platform',
+      category: 'automation',
+      icon: Sparkles,
+      gradient: 'from-fuchsia-500 to-pink-600',
+      description: 'AI-powered platform transforming product images and websites into ready-to-publish, multi-channel marketing campaigns.',
+      impact: [
+        'AI image analysis (captions, SEO, ad copy)',
+        'Playwright-based website analysis pipeline',
+        'Multi-platform publishing (Meta, LinkedIn, YouTube)'
+      ],
+      tech: ['FastAPI', 'Next.js', 'Playwright', 'Celery', 'Redis'],
+      metrics: {
+        label: 'Automation',
+        value: '100%',
+      },
+      featured: true,
+    },
+    {
+      id: 103,
+      title: 'NEET Physics AI',
+      category: 'vision',
+      icon: FileText,
+      gradient: 'from-orange-500 to-red-600',
+      description: 'Multi-modal educational AI engine that digitizes handwritten notes and auto-generates lecture plans and quizzes.',
+      impact: [
+        'Structured extraction from handwritten PDFs',
+        'Auto-generation of quizzes & summaries',
+        'Reduced instructor prep time by 80%'
+      ],
+      tech: ['Python', 'FastAPI', 'Claude', 'Chandra OCR', 'Pinecone'],
+      metrics: {
+        label: 'Time Saved',
+        value: '80%',
+      },
+      featured: true,
+    },
+    {
       id: 0,
       title: 'Shopify MCP Bot',
       category: 'automation',

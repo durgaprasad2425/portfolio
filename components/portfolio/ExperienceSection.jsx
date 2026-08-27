@@ -8,17 +8,33 @@ export default function ExperienceSection() {
   const experiences = [
     {
       type: 'work',
+      title: 'AI Full Stack Developer',
+      company: 'Seekho Becho',
+      location: 'Gurugram, India',
+      period: 'May 2026 – Present',
+      current: true,
+      description: 'Building intelligent AI chatbots and omnichannel automation platforms.',
+      achievements: [
+        'Omnichannel AI Chatbot Platform: Built end-to-end platform with multi-format Knowledge Base ingestion, RAG, and drag-and-drop flow builder',
+        'WhatsApp Engine: Developed WhatsApp automation with multi-session management, bulk campaigns, and AI Agent routing',
+        'SeekhoAI: Built AI marketing automation platform transforming product images into ready-to-publish campaigns'
+      ],
+      technologies: ['Python', 'FastAPI', 'Next.js', 'React', 'LangChain', 'MongoDB', 'Celery']
+    },
+    {
+      type: 'work',
       title: 'AI Engineer',
       company: 'Eminence Technology',
       location: 'Punjab, India',
-      period: 'Nov 2025 – Present',
-      current: true,
-      description: 'Building intelligent agents and AI-powered solutions for e-commerce platforms.',
+      period: 'Nov 2025 – Apr 2026',
+      current: false,
+      description: 'Building intelligent agents and multi-modal educational pipelines.',
       achievements: [
-        'Shopify MCP: Built an intelligent agent leveraging the MCP protocol to fetch and summarize Shopify store details (orders, products, analytics) based on user queries',
-        'Integrated LLMs for natural language understanding and FastAPI for real-time API responses'
+        'Shopify MCP Agent: Built an intelligent agent using MCP to fetch and summarize real-time Shopify data via natural language',
+        'NEET Physics AI: Developed multi-modal AI pipeline using Chandra OCR and Pinecone for structured extraction from handwritten/printed PDFs',
+        'Integrated Anthropic Claude to auto-generate lecture plans and quizzes, reducing instructor prep time by 80%'
       ],
-      technologies: ['Python', 'FastAPI', 'LangChain', 'MongoDB', 'MCP', 'Docker']
+      technologies: ['Python', 'FastAPI', 'LangChain', 'Claude', 'Chandra OCR', 'Pinecone', 'MongoDB', 'MCP', 'Docker']
     },
     {
       type: 'work',

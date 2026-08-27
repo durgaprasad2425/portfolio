@@ -46,6 +46,13 @@ export default function SkillsSection() {
     'Postman': 'https://www.svgrepo.com/show/354202/postman-icon.svg',
     'Swagger': 'https://www.svgrepo.com/show/374111/swagger.svg',
     'MCP Protocol': 'https://www.svgrepo.com/show/374016/search.svg',
+    'TypeScript': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+    'Next.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
+    'PostgreSQL': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+    'Gemini': 'https://www.svgrepo.com/show/374016/search.svg',
+    'Groq': 'https://www.svgrepo.com/show/507433/command.svg',
+    'Google APIs': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg',
+    'LinkedIn APIs': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg',
   };
 
   const skillCategories = {
@@ -64,6 +71,8 @@ export default function SkillsSection() {
         { name: 'Crew AI', level: 85 },
         { name: 'AutoGen', level: 80 },
         { name: 'FastAgents', level: 85 },
+        { name: 'Gemini', level: 90 },
+        { name: 'Groq', level: 85 },
       ]
     },
     programming: {
@@ -79,6 +88,8 @@ export default function SkillsSection() {
         { name: 'PyTorch', level: 80 },
         { name: 'TensorFlow', level: 78 },
         { name: 'Scikit-learn', level: 85 },
+        { name: 'TypeScript', level: 85 },
+        { name: 'Next.js', level: 85 },
       ]
     },
     databases: {
@@ -91,6 +102,7 @@ export default function SkillsSection() {
         { name: 'ChromaDB', level: 88 },
         { name: 'Redis', level: 82 },
         { name: 'Vector DB Architecture', level: 90 },
+        { name: 'PostgreSQL', level: 85 },
       ]
     },
     devops: {
@@ -117,6 +129,8 @@ export default function SkillsSection() {
         { name: 'Postman', level: 90 },
         { name: 'Swagger', level: 88 },
         { name: 'MCP Protocol', level: 85 },
+        { name: 'Google APIs', level: 80 },
+        { name: 'LinkedIn APIs', level: 80 },
       ]
     },
   };
@@ -270,7 +284,7 @@ export default function SkillsSection() {
         >
           <h4 className="text-slate-400 mb-6">Technologies I work with daily</h4>
           <div className="flex flex-wrap justify-center gap-3">
-            {['Python', 'LangChain', 'FastAPI', 'OpenAI', 'MongoDB', 'Pinecone', 'Docker', 'RAG', 'LLMs', 'Agentic AI'].map((tech) => (
+            {['Python', 'LangChain', 'FastAPI', 'Next.js', 'TypeScript', 'OpenAI', 'MongoDB', 'Pinecone', 'Docker', 'RAG', 'Agentic AI'].map((tech) => (
               <Badge
                 key={tech}
                 variant="outline"
